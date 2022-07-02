@@ -1,0 +1,25 @@
+<!-- Google Maps API(Application Programming Interface) => customize maps and info on maps -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Map</title>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+</head>
+
+<body>
+    <h1 style="color: yellowgreen;text-align:center">Welcome To Google Maps</h1>
+    <div id="map" style="width: 1500px;height:600px;background:yellow"></div>
+<script>
+    var mapCanvas = document.getElementById("map");
+    var mapOptions = {
+        center: new google.maps.LatLng(-1.28333,36.81667), zoom: 10
+    }
+    var map = new google.maps.Map(mapCanvas,mapOptions)
+</script>
+</body>
+</html>
+
